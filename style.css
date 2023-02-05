@@ -1,0 +1,128 @@
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient( 90deg, rgba(255, 0, 0, 0.676), rgba(55, 0, 255, 0.621) ), url(kiu1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#survey-form{
+  padding: 3rem;
+  background-color: rgba(41, 41, 134, 0.8);
+  border-radius: 5px;
+  width: 500px;
+  margin: auto;
+}
+#title{
+  font-family: 'Roboto', sans-serif;
+  width: 260px;
+  margin: auto;
+}
+#description{
+  font-family: 'Roboto', sans-serif;
+  width:350px;
+  margin: auto; 
+}
+#description1{
+  font-family: 'Roboto', sans-serif;
+  width:200px;
+  margin: auto; 
+}
+#status{
+  font-family: 'Roboto', sans-serif;
+
+}
+#major{
+  font-family: 'Roboto', sans-serif;
+}
+#question{
+  font-family: 'Roboto', sans-serif;
+}
+
+#form__label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1 rem;
+
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+#form__input {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1rem;
+	margin: 0 ;
+  
+  border-radius: 0.2rem;
+  background-color: rgb(252, 247, 247);
+  border: none;
+  width: 70%;
+  height: 20px;
+  display: block;
+  border-top: 0.3rem  solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+#form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+#major_input{
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1rem;
+	margin: 0 ;
+  
+  border-radius: 0.2rem;
+  background-color: rgb(252, 247, 247);
+  border: none;
+  width: 50%;
+  height: 30px;
+  display: block;
+  border-top: 0.3rem  solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+#submit{
+    background:rgba(41, 41, 134, 0.8);
+    color: white;
+    border-style: outset;
+    border-color: #000000;
+    height: 50px;
+    width: 100px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    border-radius: 5px;
+}
+#chbox{
+  font-family: 'Roboto', sans-serif;
+}
+#text{
+  font-family: 'Roboto', sans-serif;
+ 
+    
+}
+#txt{
+  width: 100%;
+    height: 100px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    resize: none;
+  
+}

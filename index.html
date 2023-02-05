@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  
+  <h1 id = "title"> KIU Survey Form </h1>
+  <p id = "description">This is survey form about University dorms policy</p>
+  <p id = "description1">Hic Scientia futūrum creat!</p><br>
+
+
+  <form id = "survey-form">
+
+    <div id = "name">
+      <label for="name" id="form__label" >First name:</label><br>
+      <input type="text" id="form__input" placeholder="Ex: Jhon Doe." name="name" id="name" required><br><br>
+    </div>
+
+    <div id = "email">
+      <label for="email " id="form__label">Provide your E-mail: </label><br>
+      <input type="email" name="email" placeholder="Ex: Jhondoe@examlpe.com" id="form__input" required><br><br>
+    </div>
+
+    <div id = "phone">
+      <label for="phone" id="form__label">Enter your phone number:</label><br>
+      <input type="tel" id="form__input" name="phone" placeholder="Ex: 123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+    </div>
+
+    <div id = "age">
+      <label for="age" id="form__label">Age (Optional): </label><br>
+      <input type="number" min="12" max="80" placeholder="Ex: 25" name="age" id="form__input" ><br><br>
+    </div>
+
+    <div id = "status">
+      <p>Please select your Status in the University</p>
+        <input type="radio" id="student" name="Status" value="Student" required>
+        <label for="student">Student</label><br>
+
+        <input type="radio" id="Staff" name="Status" value="Staff">
+        <label for="Staff">Staff</label><br>
+
+        <input type="radio" id="educator" name="Status" value="educator">
+        <label for="educator">Educator</label><br><br>
+    </div>
+
+    <div id = "major">
+      <p>What is your major (only for students) :</p>
+      <select name="major" id="major_input" required>
+        <option value="cs">CS</option>
+        <option value="mgmt">MGMT</option>
+        <option value="math">MATH</option>
+      </select><br><br>
+    </div>
+
+    <div id = "chbox">
+      <p>What is the greatest things about KIU: </p>
+      <input type="checkbox" id = "check1" name="check1" value="first">
+      <label for="check1"> Level of education </label><br>
+
+      <input type="checkbox" id = "check2" name="check2" value="second">
+      <label for="check2"> The location </label><br>
+
+      <input type="checkbox" id = "check3" name="check3" value="third">
+      <label for="check3"> Administration </label><br>
+
+      <input type="checkbox" id = "check4" name="check4" value="fourth">
+      <label for="check4"> Academical personal (Lectors, TAs, SAs...) </label><br>
+
+      <input type="checkbox" id = "check5" name="check5" value="fivth">
+      <label for="check5"> Dorms </label><br>
+
+    </div> 
+
+
+    <div id = "text">
+      <br>
+      <label for="txt">Summary everything about KIU: </label><br><br>
+
+      <textarea id="txt" name="txt" rows="3" cols="40" placeholder="Ex: Jhon Doe.">
+      
+      </textarea>
+
+    </div>
+
+    <div id = "question">
+      <p > Do you agree with KIU policy about Video/Audio monitoring in private places?
+        for more information visit KIU privacy policy page <a href = "https://www.kiu.edu.ge/index.php?m=245" target="_blank">click here</a></p>
+        <input type="radio" id="yes" name = "agree" value="Yes" required>
+        <label for="yes"> Yes </label>
+      
+        <input type="radio" id="no" name = "agree" value="No">
+        <label for="no"> No </label><br><br>
+    </div>
+
+    <input type="submit" id = "submit" >
+
+  </form>
+  
+</body>
+</html>

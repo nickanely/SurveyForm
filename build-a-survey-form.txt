@@ -1,0 +1,305 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  
+  <h1 id = "title"> KIU Survey Form </h1>
+  <p id = "description">This is survey form about University dorms policy</p><br>
+
+  <form id = "survey-form">
+
+    <div id = "nands">
+      <label for="name" id="name-label" >First name:</label><br>
+      <input type="text" id="name" placeholder="Ex: Jhon Doe." name="name" id="name" required><br><br>
+    </div>
+
+    <div id = "mail">
+      <label for="email " id="email-label">Provide your E-mail: </label><br>
+      <input type="email" name="email" placeholder="Ex: Jhondoe@examlpe.com" id="email" required><br><br>
+    </div>
+
+    <div id = "phone">
+      <label for="phone" id="form__label">Enter your phone number:</label><br>
+      <input type="tel" id="form__input" name="phone" placeholder="Ex: 123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+    </div>
+
+    <div id = "num">
+      <label for="age" id="number-label">Age (Optional): </label><br>
+      <input type="number" min="12" max="80" placeholder="Ex: 25" name="age" id="number" ><br><br>
+    </div>
+
+    <div id = "status">
+      <p>Please select your Status in the University</p>
+        <input type="radio" id="student" name="Status" value="Student" required>
+        <label for="student">Student</label><br>
+
+        <input type="radio" id="Staff" name="Status" value="Staff">
+        <label for="Staff">Staff</label><br>
+
+        <input type="radio" id="educator" name="Status" value="educator">
+        <label for="educator">Educator</label><br><br>
+    </div>
+
+    <div id = "major">
+      <p>What is your major (only for students) :</p>
+      <select name="major" id="dropdown" required>
+        <option value="cs">CS</option>
+        <option value="mgmt">MGMT</option>
+        <option value="math">MATH</option>
+      </select><br><br>
+    </div>
+
+
+    <div id = "chbox">
+      <p>What is the greatest things about KIU</p>
+      <input type="checkbox" id = "check1" name="check1" value="first">
+      <label for="check1"> Level of education </label><br>
+
+      <input type="checkbox" id = "check2" name="check2" value="second">
+      <label for="check2"> The location </label><br>
+
+      <input type="checkbox" id = "check3" name="check3" value="third">
+      <label for="check3"> Administration </label><br>
+
+      <input type="checkbox" id = "check4" name="check4" value="fourth">
+      <label for="check4"> Academical personal (Lectors, TAs, SAs...) </label><br>
+
+      <input type="checkbox" id = "check5" name="check5" value="fivth">
+      <label for="check5"> Dorms </label><br>
+
+    </div>    <div id = "text">
+      <br>
+      <label for="txt">Summary everything about KIU: </label><br><br>
+
+      <textarea id="txt" name="txt" rows="3" cols="40" placeholder="Ex: Jhon Doe.">
+      
+      </textarea>
+
+    </div>
+
+    <div id = "question">
+      <p > Do you agree with KIU policy about Video/Audio monitoring in private places?
+        for more information visit KIU privacy policy page <a href = "https://www.kiu.edu.ge/index.php?m=245" target="_blank">click here</a></p>
+        <input type="radio" id="yes" name = "agree" value="Yes" required>
+        <label for="yes"> Yes </label>
+      
+        <input type="radio" id="no" name = "agree" value="No">
+        <label for="no"> No </label><br><br>
+    </div>
+
+    <input type="submit" id = "submit" >
+
+  </form>
+  
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient( 90deg, rgba(255, 0, 0, 0.676), rgba(55, 0, 255, 0.621) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#survey-form{
+  padding: 3rem;
+  background-color: rgba(41, 41, 134, 0.8);
+  border-radius: 5px;
+  width: 500px;
+  margin: auto;
+}
+#title{
+  font-family: 'Roboto', sans-serif;
+  width: 260px;
+  margin: auto;
+}
+#description{
+  font-family: 'Roboto', sans-serif;
+  width:350px;
+  margin: auto; 
+}
+#status{
+  font-family: 'Roboto', sans-serif;
+
+}
+#major{
+  font-family: 'Roboto', sans-serif;
+}
+#question{
+  font-family: 'Roboto', sans-serif;
+}
+
+#form__label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1 rem;
+
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+#form__input {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1rem;
+	margin: 0 ;
+  
+  border-radius: 0.2rem;
+  background-color: rgb(252, 247, 247);
+  border: none;
+  width: 70%;
+  height: 20px;
+  display: block;
+  border-top: 0.3rem  solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+#number-label{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1 rem;
+
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+#email-label{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1 rem;
+
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+#name-label{
+font-family: 'Roboto', sans-serif;
+  font-size: 1 rem;
+
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+#number{
+    font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1rem;
+	margin: 0 ;
+  
+  border-radius: 0.2rem;
+  background-color: rgb(252, 247, 247);
+  border: none;
+  width: 70%;
+  height: 20px;
+  display: block;
+  border-top: 0.3rem  solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+#email{
+    font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1rem;
+	margin: 0 ;
+  
+  border-radius: 0.2rem;
+  background-color: rgb(252, 247, 247);
+  border: none;
+  width: 70%;
+  height: 20px;
+  display: block;
+  border-top: 0.3rem  solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+#name{
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1rem;
+	margin: 0 ;
+  
+  border-radius: 0.2rem;
+  background-color: rgb(252, 247, 247);
+  border: none;
+  width: 70%;
+  height: 20px;
+  display: block;
+  border-top: 0.3rem  solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+#form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+#dropdown{
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1rem;
+	margin: 0 ;
+  
+  border-radius: 0.2rem;
+  background-color: rgb(252, 247, 247);
+  border: none;
+  width: 50%;
+  height: 30px;
+  display: block;
+  border-top: 0.3rem  solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+#text{
+  font-family: 'Roboto', sans-serif;
+ 
+    
+}
+#txt{
+  width: 100%;
+    height: 100px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    resize: none;
+  
+}
+#submit{
+    background:rgba(41, 41, 134, 0.8);
+    color: white;
+    border-style: outset;
+    border-color: #000000;
+    height: 50px;
+    width: 100px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    border-radius: 5px;
+}
+
+** end of undefined **
+
